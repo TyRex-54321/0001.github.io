@@ -1,6 +1,6 @@
 body{
   /* 图片路径 */
-  background-image: url(../1.jpg);
+  background-image: url(1.jpg);
   /* 消除默认外边距 */
   margin: 0;   
   /* 高度至少撑满屏幕 */
