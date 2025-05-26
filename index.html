@@ -4,7 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网页设计作业</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            /* 图片路径 */
+            background-image: url(./1.jpg);
+            /* 消除默认外边距 */
+            margin: 0;   
+            /* 高度至少撑满屏幕 */
+            min-height: 100vh;  
+            /* 防止平铺 */
+            background-repeat: no-repeat; 
+            /* 图片覆盖整个区域 */
+            background-size: cover;
+            /* 图片居中显示 */
+            background-position: center; 
+            /* 固定背景 */
+            background-attachment: fixed;
+        }
+        .a{
+            font-family: "楷体", "STKaiti", serif;
+            color: rgba(255, 255, 255, 0.681); 
+            font-size: 16px;
+            /* 半透明背景 */
+            background: rgba(0, 0, 0, 0.5); 
+            /* 内边距（文字与透明背景） */
+            padding: 8px 12px; 
+            /* 圆角 */
+            border-radius: 4px; 
+            /* 定位到左下角 */
+            /* 固定定位（不受滚动影响） */
+            position: fixed; 
+            left: 20px;  
+            bottom: 20px; 
+        }
+        .b{
+            font-family: "楷体", "STKaiti", serif;
+            color: rgb(255, 255, 255); 
+            font-size: 60px; 
+            text-align: center;
+            margin-top: 80px;
+        }
+    </style>
 </head>
 <body>
     <div class="main">
