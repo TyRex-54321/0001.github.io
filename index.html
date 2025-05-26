@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网页设计作业</title>
     <style>
+        /* 重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body{
             /* 图片路径 */
             background-image: url(./1.jpg);
             /* 消除默认外边距 */
             margin: 0;   
-            /* 高度至少撑满屏幕 */
-            min-height: 100vh;  
+            /* 高度撑满屏幕 */
+            height: 100vh;  
             /* 防止平铺 */
             background-repeat: no-repeat; 
             /* 图片覆盖整个区域 */
@@ -21,6 +27,11 @@
             /* 固定背景 */
             background-attachment: fixed;
             /* 禁止页面滚动 */
+            overflow: hidden;
+        }
+        .main {
+            /* 确保main容器不溢出 */
+            height: 100%;
             overflow: hidden;
         }
         .a{
@@ -38,6 +49,8 @@
             position: fixed; 
             left: 20px;  
             bottom: 20px; 
+            /* 确保不影响滚动 */
+            z-index: 100;
         }
         .b{
             font-family: "楷体", "STKaiti", serif;
